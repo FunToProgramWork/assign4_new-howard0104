@@ -451,15 +451,7 @@ void draw() {
 
     popMatrix();
 
-    // Depth UI
-    drawDepthUI();
-
-    // Timer
-    gameTimer --;
-    if(gameTimer <= 0) gameState = GAME_OVER;
-
-    // Time UI - Requirement #4
-    drawTimerUI();
+    
 
     // Health UI
     for(int i = 0; i < playerHealth; i++){
